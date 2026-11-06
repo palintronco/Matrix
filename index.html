@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrix</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: monospace;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 100px;
+            font-size: 45px;
+        }
+
+        #mensaje {
+            font-size: 22px;
+            margin-top: 40px;
+        }
+
+        button {
+            padding: 15px 30px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>BIENVENIDO A MATRIX</h1>
+
+    <p id="mensaje">Iniciando sistema...</p>
+
+    <button onclick="iniciar()">INICIAR</button>
+
+    <script>
+
+        function iniciar() {
+
+            let mensaje = document.getElementById("mensaje");
+
+            mensaje.innerHTML = "Conectando al sistema...";
+
+            setTimeout(function() {
+                mensaje.innerHTML = "Analizando ordenador...";
+            }, 2000);
+
+            setTimeout(function() {
+                mensaje.innerHTML = "¡HAS ENTRADO EN MATRIX!";
+            }, 4000);
+
+        }
+
+    </script>
+
+</body>
+</html>
